@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Instagram Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa-brands fa-instagram pe-2"></i>Instagram</a>
+            <div class="d-flex gap-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    aria-label="Create new post">
+                    Create new post
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-label="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create new Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-light"><i class="fas fa-camera"></i></button>
+                    <button type="button" class="btn btn-light"><i class="fas fa-map-marker-alt"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <ul class="nav nav-tabs d-flex justify-content-center m-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="fas fa-th"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="fas fa-stop"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content text-center m-4" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row mb-4">
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media.istockphoto.com/id/1845512061/es/foto/lindos-gatos-y-perros-dom%C3%A9sticos-de-varios-colores-corren-por-un-prado-soleado-de-verano.jpg?s=612x612&w=0&k=20&c=6VVrOQvsNBH-FmBomJK7KLp9gFeYcrGSO65NeBAz_RQ="
+                            class="img-fluid" alt="Family time">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade text-center d-flex flex-column align-items-center" id="profile-tab-pane"
+            role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="card mb-4" style="width: 40rem;">
+                <div class="d-flex justify-content-between p-2">
+                    <h4>My Crazy Dog and Cat Spark</h4>
+                    <h6>08/26</h6>
+                </div>
+                <img src="https://media.istockphoto.com/id/1435010849/es/foto/labrador-retriever-perro-jadeando-y-gato-jengibre-sentado-frente-a-fondo-amarillo-oscuro.jpg?s=612x612&w=0&k=20&c=Ri4CxPKtI7lnPUUg926-l7HU6YVXxcO7bdPheWuth2I="
+                    class="card-img-top" alt="My-pets-smiling">
+                <div class="card-body">
+                    <h5 class="d-flex">20.242 Likes</h5>
+                    <p class="card-text d-flex">I love to appreciate the spark of friendship that my pets have.</p>
+                </div>
+            </div>
+
+            <div class="card mb-4" style="width: 40rem;">
+                <div class="d-flex justify-content-between p-2">
+                    <h4>My Anothers Partners</h4>
+                    <h6>03/28</h6>
+                </div>
+                <img src="https://media.istockphoto.com/id/1364253107/es/foto/perro-y-gato-como-mejores-amigos-mirando-por-la-ventana-juntos.jpg?s=612x612&w=0&k=20&c=sLIsLMht1ZYyKPZ2sn2FKq7OYNNRBYHo7wJibzKPc9E="
+                    class="card-img-top" alt="My-pets-watching-me">
+                <div class="card-body">
+                    <h5 class="d-flex">40.246 Likes</h5>
+                    <p class="card-text d-flex">My family watching me return home.</p>
+                </div>
+            </div>
+
+            <div class="card mb-4" style="width: 40rem;">
+                <div class="d-flex justify-content-between p-2">
+                    <h4>My Pets Playing Together</h4>
+                    <h6>03/28</h6>
+                </div>
+                <img src="https://media.istockphoto.com/id/1497909628/es/foto/gato-y-perro-sentados-juntos-en-el-prado.jpg?s=612x612&w=0&k=20&c=e_QyKM0L2UroJHg0WBpSjEer6Eg3b3D8rFSul0p0wGU="
+                    class="card-img-top" alt="My-pets-playing">
+                <div class="card-body">
+                    <h5 class="d-flex">40.246 Likes</h5>
+                    <p class="card-text d-flex">Watching them play together fills me with joy.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/151a58b3df.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
